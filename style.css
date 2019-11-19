@@ -1,0 +1,192 @@
+
+body {
+	margin: 0;
+	background-color: black;
+	/*background: url('img/brickwallbg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin:0;*/
+	font-family: "RingbearerMedium";
+	text-align: center;
+}
+
+.fade-out {
+	animation: fadeOut 4s;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1 ;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fade-in {
+	animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#bodyWrap {
+	height: 100%;
+	width: 100%;
+	background: url('img/brickwallbg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin:0;
+}
+
+#bodyWrapFrost1 {
+	height: 100%;
+	width: 100%;
+	background: url('img/frostforest1.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#bodyWrapFrost2 {
+	height: 100%;
+	width: 100%;
+	background: url('img/frostforest2.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#bodyWrapFrost3 {
+	height: 100%;
+	width: 100%;
+	background: url('img/frostforest3.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#bodyWrapStranger {
+
+	height: 100%;
+	width: 100%;
+	background: url('img/stranger.jpg') no-repeat center center fixed;
+	background-size: cover;
+	background-position: center top;
+	margin:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+
+#centerDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.centerediv, button{
+	font-size: 20px;
+	padding: 10px 6px;
+	border-radius: 8%;
+	background-color: lightgrey;
+
+}
+
+#page1h1 {
+	margin-top: -200px;
+	position: absolute;
+	color: darkred;
+	font-size: 80px;
+	   text-shadow:
+       1px 1px 0 #fff,
+     -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
+}
+
+#gameInput {
+	margin: 20px 20px;
+	padding: 10px ;
+	font-size: 25px;
+	opacity: .8;
+	border-radius: 8%;
+	outline: none;
+	text-align: center;
+
+}
+
+.hide {
+	display: none;
+}
+
+.gameh2 {
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	word-spacing: 5px;
+}
+
+button {
+	outline: none;
+	font-family: "RingbearerMedium";
+	background: url(img/buttonbg.jpg);
+	border: 5px solid grey;
+	font-size: 25px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+
+audio {
+	outline: none;
+}
+
+@font-face {
+	font-family: "RingbearerMedium";
+	src: url(font/RingbearerMedium.ttf);
+}
+
+
+.narrator {
+	background-color: rgba(135, 134, 134, .7);
+	font-size: 20px;
+	font-family: Papyrus;
+	color: whitesmoke;
+	margin: 4% 8%;
+	border: 2px solid darkgrey;
+	border-radius: 10%;
+	max-width: 400px;
+	padding: 10px;
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
