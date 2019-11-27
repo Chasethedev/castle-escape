@@ -42,8 +42,8 @@ enterBtn.addEventListener("click", function (){
 		h2.innerText = `Welcome ${player}! Let your journey begin!`;
 		// append h2
 		centerDiv.appendChild(h2);
-		// deletes play enter name btn
-		enterBtn.parentNode.removeChild(enterBtn);
+		// removes enter name btn
+		enterBtn.remove();
 		// inner text for first continue
 		firstContinueBtn.innerText = "Continue";
 		// append name button
@@ -61,17 +61,21 @@ let next2Btn = document.createElement('button');
 let someText = document.getElementById('someText');
 //first continue button event listener
 firstContinueBtn.addEventListener('click', function(){
-	bodyWrap.setAttribute('class', 'fade-out');
+	// add class to fade out
+	bodyWrap.classList.add('fade-out');
+	// set delay
 	setTimeout(function(){
-		bodyWrap.setAttribute('class','fade-in');
-		//removes first continue button
-		firstContinueBtn.parentNode.removeChild(firstContinueBtn);
+		// add class for fade in
+		bodyWrap.classList.add('fade-in');
+		// //removes first continue button
+		firstContinueBtn.remove();
 		// remove h1
 		document.getElementById('page1h1').remove();
 		//remove h2
 		h2.parentNode.removeChild(h2);
-		// changes id
-		document.getElementById('bodyWrap').id ='bodyWrapFrost1';
+		// changes class 
+		bodyWrap.classList.remove('background-image1');
+		bodyWrap.classList.add('bg-image-forest1');
 		// add classes
 		someText.setAttribute('class', 'narrator');
 		// inner text set
@@ -84,7 +88,8 @@ firstContinueBtn.addEventListener('click', function(){
     //next 1 button event listener
 	next1Btn.addEventListener("click", function(){
 		//removes nextbtn1 button
-		next1Btn.parentNode.removeChild(next1Btn);
+		// next1Btn.parentNode.removeChild(next1Btn);
+		next1Btn.remove();
 		// change box inner text
 		someText.innerText = `It is best not to be visible out in the open. Take cover and travel through trees`;
 		//create next btn 2
@@ -94,53 +99,40 @@ firstContinueBtn.addEventListener('click', function(){
 	});
 });
 
+// create next 3 button
+let next3Btn = document.createElement('button');
 //next 2 button event listener
 next2Btn.addEventListener('click', function(){
 		//removes nextbtn2 button
-		next2Btn.parentNode.removeChild(next2Btn);
-		// changes id
-		document.getElementById('bodyWrapFrost1').id ='bodyWrapFrost2';
+		// next2Btn.parentNode.removeChild(next2Btn);
+		next2Btn.remove();
+		// changes class
+		bodyWrap.classList.remove('bg-image-forest1');
+		bodyWrap.classList.add('bg-image-forest2');
 		// changes some text
-		someText.innerText = `You found a river! However it is frozen solid. This part of the forst is thick with dead trees and slippery icy bolders. It's quite hard to move through. There looks to be an easier flat path on the other side of these trees`;
+		someText.innerText = `You found a river! However it is frozen solid. This part of the forst is thick with dead trees and icy bolders. It's quite hard to move through. There looks to be an easier path on the other side of these trees`;
 		//create next btn 3
 		centerDiv.appendChild(next3Btn);
 		// add next text to next3 button
  		next3Btn.innerText = "next";	
 })
 
-// create next 3 button
-let next3Btn = document.createElement('button');
- //next 3 button event listener
+// create next 4 button
+let next4Btn = document.createElement('button');
+//next 3 button event listener
 next3Btn.addEventListener('click', function(){
 		//removes nextbtn3 button
-		next3Btn.parentNode.removeChild(next3Btn);
-		// changes id
-		document.getElementById('bodyWrapFrost2').id ='bodyWrapFrost3';
+		next3Btn.remove()
+		// changes class 
+		bodyWrap.classList.remove('background-image1');
+		bodyWrap.classList.add('bg-image-forest3');
 		// changes some text
-		someText.innerText = `This looks much easier to travel through but you are not quite as hidden. Best be aware of your surroundings and travel with caution but the lack of food and sleep has made you a bit clumsy. You can feel your senses fading with each step.`;
-		// //create next btn 4
-		// centerDiv.appendChild(next4Btn);
-		// // add next text to next3 button
- 	// 	next4Btn.innerText = "next";
-		
+		someText.innerText = `This looks much easier to travel through but you are not quite as hidden. Best be aware of your surroundings and travel with caution but the lack of food and sleep has made you a bit clumsy. You can feel your senses fading with each step but you have to keep moving.`;
+		//create next btn 4
+		centerDiv.appendChild(next4Btn);
+		// add next text to next3 button
+ 		next4Btn.innerText = "next";		
 })
-
-// forest continue button
-// let forestContinueBtn = document.createElement('button');
-// setTimeout(function(){
-// 		// creates forest continue button
-// 		centerDiv.appendChild(forestContinueBtn);
-// 		// forest continue button inner text
-// 		forestContinueBtn.innerText = 'Continue';
-// 	}, 9000)
-
-// forestContinueBtn.addEventListener("click", function(){
-// 	document.getElementById('bodyWrap2').id ='bodyWrapStranger';
-// 	someText.innerText = 'It looks like you arent alone out here after all. Though it\'s hard to tell if this is a friend or foe';
-
-// })
-
-
 
 // window.onload = function() {
 // 	document.getElementById('myAudio').play();
