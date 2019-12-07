@@ -58,19 +58,8 @@ body {
 	background: url('img/frostforest3.jpg') no-repeat center center fixed;
 }
 
-
-#bodyWrapStranger {
-	height: 100%;
-	width: 100%;
-	background: url('img/stranger.jpg') no-repeat center center fixed;
-	background-size: cover;
-	background-position: center top;
-	margin:0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
+.bg-image-treemonster {
+	background: url('img/treemonster.jpg') no-repeat center right fixed;
 }
 
 #centerDiv {
@@ -148,7 +137,7 @@ audio {
 	border: 2px solid darkgrey;
 	border-radius: 10%;
 	max-width: 400px;
-	padding: 10px;
+	padding: 20px;
 	line-height: 25px;
 }
 

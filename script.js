@@ -67,7 +67,7 @@ firstContinueBtn.addEventListener('click', function(){
 	setTimeout(function(){
 		// add class for fade in
 		bodyWrap.classList.add('fade-in');
-		// //removes first continue button
+		//removes first continue button
 		firstContinueBtn.remove();
 		// remove h1
 		document.getElementById('page1h1').remove();
@@ -88,7 +88,6 @@ firstContinueBtn.addEventListener('click', function(){
     //next 1 button event listener
 	next1Btn.addEventListener("click", function(){
 		//removes nextbtn1 button
-		// next1Btn.parentNode.removeChild(next1Btn);
 		next1Btn.remove();
 		// change box inner text
 		someText.innerText = `It is best not to be visible out in the open. Take cover and travel through trees`;
@@ -104,7 +103,6 @@ let next3Btn = document.createElement('button');
 //next 2 button event listener
 next2Btn.addEventListener('click', function(){
 		//removes nextbtn2 button
-		// next2Btn.parentNode.removeChild(next2Btn);
 		next2Btn.remove();
 		// changes class
 		bodyWrap.classList.remove('bg-image-forest1');
@@ -124,15 +122,70 @@ next3Btn.addEventListener('click', function(){
 		//removes nextbtn3 button
 		next3Btn.remove()
 		// changes class 
-		bodyWrap.classList.remove('background-image1');
+		bodyWrap.classList.remove('bg-image-forest2', 'fade-out', 'fade-in');
 		bodyWrap.classList.add('bg-image-forest3');
 		// changes some text
 		someText.innerText = `This looks much easier to travel through but you are not quite as hidden. Best be aware of your surroundings and travel with caution but the lack of food and sleep has made you a bit clumsy. You can feel your senses fading with each step but you have to keep moving.`;
 		//create next btn 4
 		centerDiv.appendChild(next4Btn);
-		// add next text to next3 button
- 		next4Btn.innerText = "next";		
+		// add next text to next4 button
+ 		next4Btn.innerText = "next4";		
 })
+
+let myAudio = document.getElementById('myAudio');
+
+//next 4 button event listener
+next4Btn.addEventListener('click', function(){
+	bodyWrap.classList.remove('bg-image-forest3');
+	bodyWrap.classList.add('fade-out');
+	// set delay
+	setTimeout(function(){
+		myAudio.src='monstersound.mp3'; myAudio.load();
+		// changes class 
+		
+		bodyWrap.classList.add('bg-image-treemonster');
+		// inner text set
+		someText.innerText = `Wow! You have stumbled upon a strange beast and disturbed his feast. Your lack of awareness due to the absence of food made it hard to see this creature until it was too late. This beast blends in quite well with the trees. Its almost like it is a tree its self.`;
+	
+	},4000)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//removes nextbtn3 button		
+// 		next4Btn.remove()
+// 		// changes class 
+// 		bodyWrap.classList.remove('background-image3');
+// 		bodyWrap.classList.add('bg-image-treemonster');
+// 		// changes some text
+// 		someText.innerText = `This looks much easier to travel through but you are not quite as hidden. Best be aware of your surroundings and travel with caution but the lack of food and sleep has made you a bit clumsy. You can feel your senses fading with each step but you have to keep moving.`;
+// 		//create next btn 4
+// 		centerDiv.appendChild(next4Btn);
+// 		// add next text to next3 button
+//  		next4Btn.innerText = "next";		
+// })
+
 
 // window.onload = function() {
 // 	document.getElementById('myAudio').play();
