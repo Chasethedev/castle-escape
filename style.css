@@ -31,7 +31,7 @@ body {
 }
 
 #bodyWrap {
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	margin:0;
 	display: flex;
@@ -65,37 +65,96 @@ body {
 #centerDiv {
 	display: flex;
 	align-items: center;
-	justify-content: top;
 	flex-direction: column;
 	height: 100vh;
+	width: 80%;
+}
+
+.musicBtnStyle {
+	position: absolute;
+    display: flex;
+    align-self: flex-start;
+    top: 0;
+    height: 60px;
+    align-items: center;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin: 6px;
+    padding: 14px 0px;
+    word-spacing: 0;
+    line-height: 1;
+    letter-spacing: .5px;
+}
+.musicBtnStyle:hover {
+	transform: translate(0px);
+	box-shadow: 0px 6px 8px;
 }
 
 button {
-	font-size: 20px;
-	padding: 10px 6px;
-	border-radius: 8%;
-	background-color: lightgrey;
+	outline: none;
+	font-family: "RingbearerMedium";
+	background: url(img/buttonbg.jpg);
+	border: 3px solid #737272;
+	padding: 10px 8px;
+	border-radius: 12px;
+	font-size: 25px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	box-shadow: 0px 6px 8px;
+}
+
+button:hover {
+	cursor: pointer;
+	transform: translateY(-2px);
+	box-shadow: 0px 9px 11px;
+}
+
+button:active {
+	transform: translateY(-1px);
+	box-shadow: 0px 6px 8px;
 }
 
 #page1h1 {
-	color: darkred;
-	font-size: 80px;
-	   text-shadow:
-       1px 1px 0 #fff,
-     -1px -1px 0 #fff,  
-      1px -1px 0 #fff,
-      -1px 1px 0 #fff,
-       1px 1px 0 #fff;
+    color: #000000;
+    font-size: 80px;
+    text-shadow: 1px 1px 0 #000,
+    -1px -1px 0 #ff0000,
+    1px -1px 0 #ff0000, 
+    -1px 1px 0 #ff0000, 
+    1px 1px 0 #f00, 
+    0px -30px 11px #92270c;
 }
+
+.blurryOut {
+	animation: blurryOut 4s; 
+}
+
+@keyframes blurryOut 
+{
+	0% 
+	{
+		opacity: 1;
+		filter: blur(1px);
+	}
+	100% 
+	{
+		opacity: 0;
+		filter: blur(20px);
+	}
+}
+
 
 #gameInput {
 	margin: 20px 20px;
 	padding: 10px ;
 	font-size: 25px;
 	opacity: .8;
-	border-radius: 8%;
+	border-radius: 8px;
 	outline: none;
 	text-align: center;
+	font-family: Papyrus;
+	box-shadow: 0px 0px 10px #92270c;
 }
 
 .hide {
@@ -107,16 +166,7 @@ button {
 	color: white;
 	text-align: center;
 	word-spacing: 5px;
-}
 
-button {
-	outline: none;
-	font-family: "RingbearerMedium";
-	background: url(img/buttonbg.jpg);
-	border: 5px solid grey;
-	font-size: 25px;
-	word-spacing: 2px;
-	letter-spacing: 1px;
 }
 
 audio {
@@ -129,23 +179,62 @@ audio {
 }
 
 .narrator {
-	background-color: rgba(135, 134, 134, .7);
+	background: url('img/paperbg.jpg') no-repeat;
+	background-size: cover;
 	font-size: 20px;
 	font-family: Papyrus;
-	color: whitesmoke;
-	margin: 4% 8%;
-	border: 2px solid darkgrey;
-	border-radius: 10%;
+	color: black;
+	margin: 70px 10px;
+	border: 2.5px solid #292929;
+	border-radius: 8px;
 	max-width: 400px;
 	padding: 20px;
 	line-height: 25px;
+	box-shadow: 0px 4px 8px;
+}
+
+.beasttalkcontainer {
+	color: #ffffff;
+}
+
+.beastTalk {
+    font-size: 20px;
+    font-family: Papyrus;
+    box-shadow: 0 0 8px 6px;
+    padding: 15px;
+    color: rgba(10, 11, 12, 0.7);
+    border-radius: 8px;
+    background-color: rgba(10, 11, 12, 0.7);
+    display: flex;
+}
+
+.optionsContainer {
+	display: flex;
+	/*border: 2px solid black;*/
+	justify-content: space-between;
+	/*background-color: rgba(10, 11, 12, 0.7);
+	box-shadow: 0 0 8px 6px;
+	color: rgba(10, 11, 12, 0.7);*/
+	/*padding: 15px;*/
+
+}
+
+.optionBtnStyle {
+	background-image: none;
+	background-color: steelblue;
+	font-size: 18px;
+	flex-basis: 45%;
+	border: 2px solid #737272;
 }
 
 
-
-
-
-
+.optionBtnStyle:hover {
+	background-image: none;
+	background-color: forestgreen;
+	color: whitesmoke;
+	font-size: 18px;
+	flex-basis: 45%;
+}
 
 
 
