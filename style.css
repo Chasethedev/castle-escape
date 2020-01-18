@@ -72,7 +72,6 @@ body {
 
 .musicBtnStyle {
 	position: absolute;
-    display: flex;
     align-self: flex-start;
     top: 0;
     height: 60px;
@@ -80,7 +79,7 @@ body {
     width: 60px;
     border-radius: 50%;
     font-size: 15px;
-    margin: 6px;
+    margin: 2px;
     padding: 14px 0px;
     word-spacing: 0;
     line-height: 1;
@@ -193,48 +192,123 @@ audio {
 	box-shadow: 0px 4px 8px;
 }
 
-.beasttalkcontainer {
-	color: #ffffff;
-}
 
 .beastTalk {
     font-size: 20px;
     font-family: Papyrus;
     box-shadow: 0 0 8px 6px;
-    padding: 15px;
+    padding: 5px;
     color: rgba(10, 11, 12, 0.7);
     border-radius: 8px;
     background-color: rgba(10, 11, 12, 0.7);
     display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    margin-top: 70px;
 }
+
+.beasth3Style {
+	color: white;
+	flex: 1;
+	margin-top: -10px;
+}
+
+
+.beasttalkcontainer {
+	color: #ffffff;
+	flex:1;
+	/*: 2px solid green;*/
+}
+
+.choseh3style {
+	padding: 20px;
+	color: #fff;
+	background-color: rgba(10, 11, 12, 0.7);
+	border-radius: 8px;
+}
+
 
 .optionsContainer {
 	display: flex;
-	/*border: 2px solid black;*/
 	justify-content: space-between;
-	/*background-color: rgba(10, 11, 12, 0.7);
-	box-shadow: 0 0 8px 6px;
-	color: rgba(10, 11, 12, 0.7);*/
-	/*padding: 15px;*/
-
+	max-width: 400px;
 }
 
 .optionBtnStyle {
 	background-image: none;
-	background-color: steelblue;
+	background-color: rgba(70, 130, 180, 0.75);
 	font-size: 18px;
 	flex-basis: 45%;
-	border: 2px solid #737272;
+	font-family: Papyrus;
+	margin-bottom: 20px;
+	box-shadow: 0 0 20px 10px;
 }
-
 
 .optionBtnStyle:hover {
 	background-image: none;
-	background-color: forestgreen;
+	background-color: rgba(72, 180, 70, 0.9);
 	color: whitesmoke;
 	font-size: 18px;
-	flex-basis: 45%;
+	font-family: Papyrus;
+	box-shadow: 0 0 20px 10px;
 }
+
+/*.anim-typing  {
+	animation: typewriter 4s steps(40) 1s 1 normal both,
+	
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	} 
+	to {
+		width: 16em;
+	}
+}
+*/
+
+/*intimidations and persuasion divs*/
+
+
+.pntsContainerDivStyle {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    top: 0;
+    border-radius: 10px;
+    margin-top: 1px;
+}
+
+.intimidationStyle {
+	background: url('img/intimidatebg.jpg') no-repeat;
+    height: 50px;
+    width: 100px;
+    top: 0;
+    border-radius: 10px;
+    color: whitesmoke;
+    word-wrap: break-word;
+    line-height: 1;
+    padding: 3.5px 6px;
+    border: 2px solid grey;
+    margin: 1px;
+}
+
+.persuassionStyle {
+	background: url('img/persuadebg.jpg') no-repeat;
+    height: 50px;
+    width: 100px;
+    top: 0;
+    border-radius: 10px;
+    color: whitesmoke;
+    word-wrap: break-word;
+    line-height: 1;
+    padding: 3.5px 6px;
+    border: 2px solid grey;
+    margin: 1px;
+}
+
 
 
 
