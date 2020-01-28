@@ -411,7 +411,7 @@ opt9Btn.addEventListener('click', function(){
 
 	choseh3.classList.add('fade-out');
 
-	beasttalkcontainer.innerText = `So be it then. I shall let you pass. Behind me there is path that leads up the mountains. Stay to the right any time the trail splits and it will lead you to your destination. No need to take cover while on the trail. There is no other living creatures in this forest besides you.. especially this close to the castle`
+	beasttalkcontainer.innerText = `So be it then. I shall let you pass. Behind me there is path that leads up the mountains. Stay to the right any time the trail splits and it will lead you to your destination. No need to take cover while on the trail. There are no other living creatures in this forest besides you.. especially this close to the castle.`
 	opt9Btn.remove()
 	opt10Btn.remove()
 
@@ -430,7 +430,7 @@ opt10Btn.addEventListener('click', function(){
 
 	choseh3.classList.add('fade-out');
 
-	beasttalkcontainer.innerText = `So be it then tough guy. I shall let you pass. Behind me there is path that leads up the mountains. Stay to the right any time the trail splits and it will lead you to your destination. No need to take cover while on the trail. There is no other living creatures in this forest besides you.. especially this close to the castle.`
+	beasttalkcontainer.innerText = `So be it then tough guy. I shall let you pass. Behind me there is path that leads up the mountains. Stay to the right any time the trail splits and it will lead you to your destination. No need to take cover while on the trail. There are no other living creatures in this forest besides you.. especially this close to the castle.`
 	opt9Btn.remove()
 	opt10Btn.remove()
 	setTimeout(function(){
