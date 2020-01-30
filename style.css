@@ -227,7 +227,6 @@ audio {
 	border-radius: 8px;
 }
 
-
 .optionsContainer {
 	display: flex;
 	justify-content: space-between;
@@ -245,11 +244,11 @@ audio {
 }
 
 .optionBtnStyle:hover {
-	background-image: none;
-	background-color: rgba(70, 130, 180, 0.75);
+	/*background-image: none;
+	background-color: rgba(70, 130, 180, 0.75);*/
 	color: whitesmoke;
-	font-size: 18px;
-	font-family: Papyrus;
+	/*font-size: 18px;
+	font-family: Papyrus;*/
 	box-shadow: 0 0 20px 10px;
 }
 
