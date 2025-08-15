@@ -394,7 +394,7 @@ opt8Btn.addEventListener('click', function(){
 
 	choseh3.classList.remove('fade-in');
 
-	beasttalkcontainer.innerText = `Hahaha! Oh you are so intimidating with your little weapons. Well Mr impatient if it's shelter you seek then you find it at that glow mountain. It is in fact a castle from the ancient days but be warned, finding it will be your down fall. Like a moth to a flame`
+	beasttalkcontainer.innerText = `Hahaha! Oh you are so intimidating with your little weapons. Well Mr impatient if it's shelter you seek then you find it at that glow in the mountain. It is in fact a castle from the ancient days but be warned, finding it will be your down fall. Like a moth to a flame`
 	opt7Btn.remove()
 	opt8Btn.remove()
 
